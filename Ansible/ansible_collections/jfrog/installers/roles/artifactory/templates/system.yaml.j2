@@ -32,13 +32,7 @@ shared:
 
     ## Example for mysql/postgresql
     type: "{{ db_type }}"
-{%+ if db_type == 'derby' -%}
-#    driver: "{{ db_driver }}"
-#    url: "{{ db_url }}"
-#    username: "{{ db_user }}"
-{%+ else -%}
-     driver: "{{ db_driver }}"
-     url: "{{ db_url }}"
-     username: "{{ db_user }}"
-{%+ endif -%}
+    driver: "{{ db_driver }}"
+    url: "{{ db_url }}"
+    username: "{{ db_user }}"
     password: "{{ db_password }}"
